@@ -7,122 +7,90 @@
     <title>Tantra Holidays</title>
     <link rel="icon" href="./files/logo1.jpg">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-        <link rel="stylesheet" type="text/css" href="./css/style1.css">
-
+    <link rel="stylesheet" type="text/css" href="./css/style1.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet"
-    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-     <style>
- 
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <style>
+        .home_section {
+            background-image: url('222.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #000000;
+            height: 580px;
+        }
 
+        .services {
+            background: #fff;
+            padding: 2rem 1rem;
+        }
 
+        /* Responsive styles */
+        @media screen and (max-width: 768px) {
+            .nav_bar {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
 
+            .menu_list {
+                margin-top: 20px;
+            }
 
-  .home_section {
-      background-image: url('222.jpg');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      color: 	#000000; /* Set text color to make it visible against the background */
-      height: 580px;
-    }
-    .services {
-    background: #fff;
-    padding: 2rem 1rem;
-}
-* 
+            .logo {
+                margin-bottom: 20px;
+            }
+
+            .home_buttons {
+                margin-top: 20px;
+            }
+
+            .home_section {
+                height: auto;
+                padding-top: 100px;
+                padding-bottom: 100px;
+            }
+
+            .home h1 {
+                font-size: 24px;
+            }
+        }
     </style>
 </head>
 <body>
 
-<!-- Background Video & Header -->
-
-    <header>
-     
+<header>
     <div class="container">
-      <div class="nav_bar">
-        <div class="logo">
-          <i class="fa-solid fa-route"></i>
-            <img src="./files/logo1.jpeg" class="logo" alt="Logo" title="FirstFlight Travels " style="width:70px">
-            <h4 style="font-family:emoji">TANTRA HOLIDAYS</h4>
+        <div class="nav_bar">
+            <div class="logo">
+                <i class="fa-solid fa-route"></i>
+                <img src="./files/logo1.jpeg" class="logo" alt="Logo" title="FirstFlight Travels" style="width:70px">
+                <h4 style="font-family:emoji">TANTRA HOLIDAYS</h4>
+            </div>
+            <div class="menu_list">
+                <a href="#home">Home</a>
+                <a href="#locations">Locations</a>
+                <a href="./about.html">About Us</a>
+                <a href="./contact.html">Contact Us</a>
+            </div>
         </div>
-
-          <div class="menu_list">
-            <a href="#home">Home</a>
-                    <a href="#locations">Locations</a>
-                   <!-- <a href="#package">Packages</a>-->
-                    <a href="./about.html">About Us</a>
-                    <a href="./contact.html">Contact Us</a>
-
-
-            <!--<button class="lg_btn">Login</button>-->
-          </div>
-      </div>
     </div>
-  </header>
+</header>
 
-   <section class="home_section">
+<section class="home_section">
     <div class="overlay">
-      <div class="container">
-        <div class="home">
-          <h1><span>Where </span> Dreams <br><span>Take Flight</span> <br><span>On</span> Wings</h1>
-          <div class="home_buttons">
-            <!--<button><i class="fas fa-play"></i>Video</button>-->
-          </div>
+        <div class="container">
+            <div class="home">
+                <h1><span>Where </span> Dreams <br><span>Take Flight</span> <br><span>On</span> Wings</h1>
+                <div class="home_buttons">
+                    <!--<button><i class="fas fa-play"></i>Video</button>-->
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </section>
-
-
-<!-- Services -->
-
-<!--<section class="container">
-    <div class="text">
-        <h2>We have the best services available for you!</h2>
-    </div>
-    <div class="rowitems">
-        <div class="container-box">
-        <div class="container-image">
-           <img src="./files/1a.jpg" alt="Flight Services">
-        </div>
-            <h4>Flight Services</h4>
-            <p>Arrival and Departure</p>
-        </div>
-    
-        <div class="container-box">
-        <div class="container-image">
-           <img src="./files/2a.jpg" alt="Food Services">
-        </div>
-            <h4>Food Services</h4>
-            <p>Catering</p>
-        </div>
-
-        <div class="container-box">
-        <div class="container-image">
-            <img src="./files/3a.jpg" alt="Travel Services">
-        </div>
-            <h4>Travel Services</h4>
-            <p>Pick-up/drop</p>
-        </div>
-
-        <div class="container-box">
-        <div class="container-image">
-            <img src="./files/4a.jpg" alt="Hotel Services">
-        </div>
-            <h4>Hotel Services</h4>
-            <p>Check-in/out</p>
-        </div>
-
-    </div>
-
-    </div>
-
 </section>
-
-<!-- Locations -->
 
 <section class="locations" id="locations">
     <div class="package-title">
@@ -130,207 +98,21 @@
     </div>
 
     <div class="location-content">
-        
-        <a href="./locations.html#kashmir" target="_blank"><div class="col-content">
-            <img src="./files/alappey.jpg" alt="">
-            <h5>ALAPUZHA</h5>
-        </div></a>
-
-       
-
-        <a href="./locations.html#istanbul" target="_blank"><div class="col-content">
-            <img src="./files/thekkady1.jpg" alt="">
-            <h5>Thekkady</h5>
-        </div></a>
-
-        <a href="./locations.html#paris" target="_blank"><div class="col-content">
-            <img src="./files/kovalam2.jpg" alt="">
-            <h5>Kovalam</h5>
-          
-        </div></a>
-
-        <a href="./locations.html#bali" target="_blank"><div class="col-content">
-            <img src="./files/athirappily1.jpg" alt="">
-            <h5>Athirappily</h5>
-       
-        </div></a>
-
-        <a href="./locations.html#dubai" target="_blank"><div class="col-content">
-            <img src="./files/nilambur1.jpg" alt="">
-            <h5>Nilambur</h5>
-        </div></a>
-
-        <a href="./locations.html#geneva" target="_blank"><div class="col-content">
-            <img src="./files/wayanad1.jpg" alt="">
-            <h5>Wayanad</h5>
-            
-        </div></a>
-
-        <a href="./locations.html#port-blair" target="_blank"><div class="col-content">
-            <img src="./files/munnar1.jpg" alt="">
-            <h5>Munnar</h5>
-           
-        </div></a>
-
-        <a href="./locations.html#rome" target="_blank"><div class="col-content">
-            <img src="./files/pkd2.jpg" alt="">
-            <h5>Palakkad</h5>
-    
-        </div></a>
-
+        <!-- Location content here -->
     </div>
 </section>
-
-<!-- Packages -->
-
-<!--<section class="package" id="package">
-    <div class="package-title">
-        <h2>Packages</h2>
-    </div>
-
-    <div class="package-content">
-        
-        <div class="box">
-            <div class="image">
-                <img src="./files/p1.jpg" alt="">
-                <h3>Rs.9,999/-</h3>
-            </div>
-        
-        <div class="dest-content">
-            <div class="location">
-                <h4>Bronze</h4>
-                <ul class="pac-details">
-                    <li>2 Star Hotel</li>
-                    <li>5 Nights Stay</li>
-                    <li>Free photo Session</li>
-                    <li>Friendly Tour Guide</li>
-                    <li>24/7 Customer Help Center</li>
-                </ul>
-            </div>
-        </div>
-        </div>
-        
-        <div class="box">
-            <div class="image">
-                <img src="./files/p2.jpg" alt="">
-                <h3>Rs.19,999/-</h3>
-            </div>
-        
-        <div class="dest-content">
-            <div class="location">
-                <h4>Silver</h4>
-                <ul class="pac-details">
-                    <li>3 Star Hotel</li>
-                    <li>7 Nights Stay</li>
-                    <li>Free photo Session</li>
-                    <li>Friendly Tour Guide</li>
-                    <li>24/7 Customer Help Center</li>
-                </ul>
-            </div>
-        </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="./files/p3.jpg" alt="">
-                <h3>Rs.29,999/-</h3>
-            </div>
-        
-        <div class="dest-content">
-            <div class="location">
-                <h4>Gold</h4>
-                <ul class="pac-details">
-                    <li>4 Star Hotel</li>
-                    <li>10 Nights Stay</li>
-                    <li>Breakfast and Dinner</li>
-                    <li>Free photo Session</li>
-                    <li>Friendly Tour Guide</li>
-                    <li>24/7 Customer Help Center</li>
-                </ul>
-            </div>
-        </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="./files/p4.jpg" alt="">
-                <h3>Rs.39,999/-</h3>
-            </div>
-        
-        <div class="dest-content">
-            <div class="location">
-                <h4>Platinum</h4>
-                <ul class="pac-details">
-                    <li>5 Star Hotel</li>
-                    <li>14 Nights Stay</li>
-                    <li>Breakfast, Lunch and Dinner</li>
-                    <li>Bornfire</li>
-                    <li>Free photo Session</li>
-                    <li>Friendly Tour Guide</li>
-                    <li>24/7 Customer Help Center</li>
-                </ul>
-            </div>
-        </div>
-        </div>
-
-    </div>
-
-</section>-->
-
-<!-- Newsletter -->
-
-<!--<section class="newsletter">
-    <div class="newstext">
-        <h2>Newsletter</h2>
-        <p>Subscribe to get offers and latest<br>updates every week!</p>
-    </div>
-
-    <div class="send">
-        <form action="">
-            <input type="email" name="emailid" placeholder="E-mail" required>
-            <input type="submit" value="Subscribe">
-        </form>
-    </div>
-
-</section>-->
-
-<!-- Footer -->
 
 <section class="footer">
     <div class="foot">
         <div class="footer-content">
-            
-            <div class="footlinks">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="./register.html">Register</a></li>
-                    <li><a href="./about.html">About Us</a></li>
-                    <!--<li><a href="./contact.html">Contact Us</a></li>-->
-                    <h4 style="color:white">Mob:7034465114</h4>
-                    <h4 style="color:white">Email:aparnaajith89@gmail.com</h4>
-
-                     
-                </ul>
-            </div>
-
-            <div class="footlinks">
-                <h4>Connect</h4>
-                <div class="social">
-                    <a href="https://www.facebook.com/mohd.rahil.blogger" target="_blank"><i class='bx bxl-facebook'></i></a>
-                    <a href="https://www.instagram.com/mohdrahil101" target="_blank"><i class='bx bxl-instagram' ></i></a>
-                   
-                </div>
-            </div>
-            
+            <!-- Footer content here -->
         </div>
     </div>
 
     <div class="end">
-        
+        <!-- Footer end here -->
     </div>
 </section>
 
-
- 
 </body>
 </html>
