@@ -3,134 +3,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Tantra Holidays</title>
     <link rel="icon" href="./files/logo1.jpg">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons CSS (Optional) -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/style1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <style>
-        /* Your custom CSS styles here */
+        
         .home_section {
             background-image: url('222.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             color: #000000;
-            min-height: 580px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            height: 580px;
+        }
+        .navbar {
+            background-color: white; /* Set background to white */
+        }
+        .navbar-nav .nav-link {
+            color: black; /* Set font color to black */
+        }
+        .navbar-nav .nav-link:hover {
+            color: #6c757d; /* Change color on hover */
+        }
+        .location-content .col-content {
             text-align: center;
         }
-
-        .services {
-            background: #fff;
-            padding: 2rem 1rem;
-        }
-
-        /* Additional custom styles */
-        .footer {
-            background-color: #333;
-            color: #fff;
-            padding: 20px 0;
-        }
-
-        .footer .footer-content {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .footer .footer-content .footlinks ul {
-            padding: 0;
-            list-style: none;
-        }
-
-        .footer .footer-content .footlinks ul li {
-            margin-bottom: 10px;
-        }
-
-        .footer .footer-content .footlinks ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        .footer .footer-content .social a {
-            color: #fff;
-            text-decoration: none;
-            margin-right: 10px;
-        }
-
-        /* Responsive styles */
-        @media screen and (max-width: 992px) {
-            .home_section {
-                min-height: 300px;
-            }
+        .location-content .col-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+}
+        
+        .footer-content .footlinks ul li {
+            color: black; /* Change font color to black */
         }
     </style>
 </head>
 <body>
-    <header>
+
+<!-- Header -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:white">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <div class="logo">
-                        <img src="./files/logo1.jpeg" class="logo" alt="Logo" title="FirstFlight Travels" style="width:70px">
-                        <h4 style="font-family:emoji">TANTRA HOLIDAYS</h4>
-                    </div>
-                </div>
-                <div class="col-md-6 text-end">
-                    <button class="btn btn-primary">Menu</button> <!-- You can replace this with your menu icon -->
-                </div>
+            <a class="navbar-brand" href="#">
+                <img src="./files/logo1.jpeg" class="logo" alt="Logo" title="FirstFlight Travels" style="width:70px">
+                <h4 style="font-family:emoji;color:black">TANTRA HOLIDAYS</h4>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./locations.html">Locations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact Us</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </header>
+    </nav>
+</header>
 
-    <section class="home_section">
-        <div class="overlay">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <h1><span>Where </span> Dreams <br><span>Take Flight</span> <br><span>On</span> Wings</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Your content for locations, packages, newsletter, footer, etc. goes here -->
-
-    <section class="footer">
+<!-- Home Section -->
+<section class="home_section" id="home">
+    <div class="overlay">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="footer-content">
-                        <div class="footlinks">
-                            <h4>Quick Links</h4>
-                            <ul>
-                                <li><a href="./register.html">Register</a></li>
-                                <li><a href="./about.html">About Us</a></li>
-                                <li><a href="./contact.html">Contact Us</a></li>
-                            </ul>
-                        </div>
-                        <div class="footlinks">
-                            <h4>Connect</h4>
-                            <div class="social">
-                                <a href="https://www.facebook.com/mohd.rahil.blogger" target="_blank"><i class="bi bi-facebook"></i></a>
-                                <a href="https://www.instagram.com/mohdrahil101" target="_blank"><i class="bi bi-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 text-end">
-                    <h4>Mob: 7034465114</h4>
-                    <h4>Email: aparnaajith89@gmail.com</h4>
+            <div class="home">
+                <h1><span>Where </span> Dreams <br><span>Take Flight</span> <br><span>On</span> Wings</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Locations Section -->
+<section class="locations" id="locations">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="package-title">
+                    <h2>Locations</h2>
                 </div>
             </div>
         </div>
-    </section>
+        <div class="row justify-content-center">
+            <div class="col-md-3">
+                <div class="col-content">
+                    <a href="./locations.html#alappey" target="_blank">
+                        <img src="./files/alappey.jpg" alt="">
+                        <h5>ALAPUZHA</h5>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="col-content">
+                    <a href="./locations.html#thekkady" target="_blank">
+                        <img src="./files/thekkady1.jpg" alt="">
+                        <h5>Thekkady</h5>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="col-content">
+                    <a href="./locations.html#kovalam" target="_blank">
+                        <img src="./files/kovalam2.jpg" alt="">
+                        <h5>Kovalam</h5>
+                    </a>
+                </div>
+            </div>
+             <div class="col-md-3">
+                <div class="col-content">
+                     <a href="./locations.html#athirappily" target="_blank"><div class="col-content">
+            <img src="./files/athirappily1.jpg" alt="">
+            <h5>Athirappily</h5>
+       
+                         </div>
+                    </a>
+                </div>
+            </div>
+            <!-- Add more columns for other locations -->
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-3">
+                <div class="col-content">
+                    <a href="./locations.html#nilambur" target="_blank"><div class="col-content">
+            <img src="./files/nilambur1.jpg" alt="">
+            <h5>Nilambur</h5>
+        </div></a>
 
-    <!-- Bootstrap JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="col-content">
+                    <a href="./locations.html#wayanad" target="_blank"><div class="col-content">
+            <img src="./files/wayanad1.jpg" alt="">
+            <h5>Wayanad</h5>
+            
+        </div></a>
+
+                </div>
+            </div>
+           
+             <div class="col-md-3">
+                <div class="col-content">
+                     <a href="./locations.html#munnar" target="_blank"><div class="col-content">
+            <img src="./files/munnar1.jpg" alt="">
+            <h5>Munnar</h5>
+           
+        </div></a>
+
+                       
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="col-content">
+                       <a href="./locations.html#rome" target="_blank"><div class="col-content">
+            <img src="./files/pkd2.jpg" alt="">
+            <h5>Palakkad</h5>
+    
+        </div></a>
+
+
+                       
+                </div>
+            </div>
+            <!-- Add more columns for other locations -->
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="footer-content">
+                    <div class="footlinks">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="./register.html">Register</a></li>
+                            <li><a href="./about.html">About Us</a></li>
+                            <li style="color:white">Mob:+91 9495301375</li>
+                            <li style="color:white">Email: samsabu777@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div class="footlinks">
+                        <h4>Connect</h4>
+                        <div class="social">
+                            <a href="" target="_blank"><i class='bx bxl-facebook'></i></a>
+                            <a href="" target="_blank"><i class='bx bxl-instagram'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </body>
 </html>
