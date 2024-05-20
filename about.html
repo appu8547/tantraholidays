@@ -1,136 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tantra Holidays</title>
-    <link rel="icon" href="./files/logo1.jpeg">
+  <title>Tantra Holidays</title>
+    <link rel="icon" href="./files/logo1.jpg">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-        <link rel="stylesheet" type="text/css" href="./css/style1.css">
-
+    <link rel="stylesheet" type="text/css" href="./css/style1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet"
-    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-  
-  <style>
- 
-
-
-
-
-  .home_section {
-      background-image: url('222.jpg');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      color: 	#000000; /* Set text color to make it visible against the background */
-      height: 580px;
-    }
-    .services {
-    background: #fff;
-    padding: 2rem 1rem;
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <style>
+       
+        .container-box {
+            padding: 20px;
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+           .home_section {
+            background-image: url('222.jpg');
+             background-size: cover; /* This makes the image cover the entire container */
+    background-position: center; /* This centers the image */
+    background-repeat: no-repeat; /* This prevents the image from repeating */
+    height: 100vh; /* This sets the height to 100% of the viewport height */
+        }
+        
+        .navbar {
+            background-color: white; /* Set background to white */
+        }
+        .navbar-nav .nav-link {
+            color: black; /* Set font color to black */
+        }
+        .navbar-nav .nav-link:hover {
+            color: #6c757d; /* Change color on hover */
+        }
+        .location-content .col-content {
+            text-align: center;
+        }
+        .location-content .col-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
 }
-   
-
     </style>
- 
 </head>
 <body>
-   <header>
-     
-    <div class="container">
-      <div class="nav_bar">
-        <div class="logo">
-          <i class="fa-solid fa-route"></i>
-            <img src="./files/logo1.jpeg" class="logo" alt="Logo" title="FirstFlight Travels " style="width:70px">
-            <h4 style="font-family:emoji">TANTRA HOLIDAYS</h4>
-        </div>
 
-          <div class="menu_list">
-            <a href="./index.html">Home</a>
-                    <a href="./locations.html">Locations</a>
-                   <!-- <a href="#package">Packages</a>-->
-                    <a href="./about.html">About Us</a>
-                    <a href="./contact.html">Contact Us</a>
-
-
-            <!--<button class="lg_btn">Login</button>-->
-          </div>
-      </div>
-    </div>
-  </header>
-
-  <section class="home_section">
-    <div class="overlay">
-      <div class="container">
-        <div class="home">
-          <h1><span>About</span> Us </h1>
-          <div class="home_buttons">
-           
-            <!--<button><i class="fas fa-play"></i>Video</button>-->
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-    
-<section class="container">
-    <div class="text">
-        <h2>Connect With Tantra Connect With Yourself !!!</h2>
-    </div>
-    <div class="rowitems">
-        <div class="container-box">
-        <div class="container-image">
-          
-        </div>
-            <p>
-
-
-Welcome to Tantra, your premier destination for extraordinary travel experiences in the enchanting realm of Kerala. Based in the picturesque city of Alappuzha, our passion for hospitality and our intimate knowledge of Kerala's diverse landscapes and rich cultural heritage allow us to curate unforgettable journeys spanning the length and breadth of this captivating state. From the tranquil backwaters of Alappuzha to the misty hills of Munnar, and from the pristine beaches of Kovalam to the vibrant streets of Kochi, we are dedicated to showcasing the best of Kerala's beauty, hospitality, and culture. Let us be your guide to discovering the magic of Kerala, one extraordinary experience at a time. For inquiries and bookings, please contact us at +91 94953 01375 or email us at samsabu777@gmail.com.</p>
-        </div>
-    
-
-    </div>
-
-    </div>
-
-</section>
-<section class="footer">
-    <div class="foot">
-        <div class="footer-content">
-            
-            <div class="footlinks">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="./register.html">Register</a></li>
-                    <li><a href="./about.html">About Us</a></li>
-                    <!--<li><a href="./contact.html">Contact Us</a></li>-->
-                    <h4 style="color:white">Mob:+91 9495301375</h4>
-                    <h4 style="color:white">Email:samsabu777@gmail.com</h4>
-
-                     
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:white">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./files/logo1.jpeg" class="logo" alt="Logo" title="FirstFlight Travels" style="width:70px">
+                <h4 style="font-family:emoji;color:black">TANTRA HOLIDAYS</h4>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./locations.html">Locations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact Us</a>
+                    </li>
                 </ul>
             </div>
+        </div>
+    </nav>
+</header>
 
-            <div class="footlinks">
-                <h4>Connect</h4>
-                <div class="social">
-                    <a href="https://www.facebook.com/mohd.rahil.blogger" target="_blank"><i class='bx bxl-facebook'></i></a>
-                    <a href="https://www.instagram.com/mohdrahil101" target="_blank"><i class='bx bxl-instagram' ></i></a>
-                   
-                </div>
+<section class="home_section" id="home">
+    <div class="overlay">
+        <div class="container">
+            <div class="home">
+                <h1><span>About </span> Us </h1>
             </div>
-            
         </div>
     </div>
+</section>
 
-    <div class="end">
-        
+<section class="container">
+    <div class="text text-center">
+        <h2>Connect With Tantra Connect With Yourself !!!</h2>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="container-box">
+                <div class="container-image">
+                    <!-- You can add images here -->
+                </div>
+                <p>Welcome to Tantra, your premier destination for extraordinary travel experiences in the enchanting realm of Kerala. Based in the picturesque city of Alappuzha, our passion for hospitality and our intimate knowledge of Kerala's diverse landscapes and rich cultural heritage allow us to curate unforgettable journeys spanning the length and breadth of this captivating state. From the tranquil backwaters of Alappuzha to the misty hills of Munnar, and from the pristine beaches of Kovalam to the vibrant streets of Kochi, we are dedicated to showcasing the best of Kerala's beauty, hospitality, and culture. Let us be your guide to discovering the magic of Kerala, one extraordinary experience at a time. For inquiries and bookings, please contact us at 7034465114 or email us at aparnaajith89@gmail.com.</p>
+            </div>
+        </div>
     </div>
 </section>
- 
+
+<!-- Footer Section New  -->
+<footer>
+    <div class="container-fluid  pb-2" style="background-color: rgb(21, 74, 74)">
+        <div class="row text-center pt-5">
+             <div class="footer-content">
+                <div class="row">
+                    <div class="col-md-4">
+                        <ul>
+                            <h4 class="text-white">Quick Links</h4>
+                            <li><a href="./register.html"  class="text-white">Register</a></li>
+                            <li><a href="./about.html" class="text-white">About Us</a></li>
+                            <li style="color:white">Mob :+91 8547159382</li>
+                            <li style="color:white">Email : contact.tantraholidays@gmail.com</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="text-white pt-5 pb-5"><i>"Connect with Tantra Connect With Yourself"</i></h5>
+                    </div>
+                    <div class="col-md-4">  
+                        <h4 class="text-white">Social Links</h4>
+                        <div class="social">
+                            <a href="https://www.facebook.com/profile.php?id=61559504773654&mibextid=ZbWKwL" target="_blank"><i class='bx bxl-facebook'></i></a>
+                            <a href="https://www.instagram.com/tantra_holidays?igsh=dW1mcHowemJ1Z2p5" target="_blank"><i class='bx bxl-instagram'></i></a>
+                        </div>
+                  </div>
+            <div>
+                <p class="text-center text-white pt-3 pb-2">Copyright @ Tantra Holidays 2024</p>
+            </div>
+        </div>
+    </div>
+</footer> 
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>
